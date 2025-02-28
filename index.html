@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- tailwind css setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css setup -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-fontGrotesk bg-sky-50">
+
+
+    <!-- navbar section start  -->
+    <section class="navbar flex justify-between items-center bg-white p-4 w-11/12 mx-auto rounded-lg my-6">
+        <div class="logo flex items-center justify-center space-x-2">
+            <img src="./assets/logo.png" alt="" class="w-11">
+            <h3 class="text-2xl">Dev<span class="font-bold">Board</span></h3>
+        </div>
+        <div class="flex items-center justify-between space-x-10">
+            <div>
+                <div class="flex items-center bg-sky-50 rounded-2xl px-2 py-1 space-x-2">
+                    <img src="./assets/checkbox.png" alt="" class="w-5">
+                    <p class="font-bold text-lg">23</p>
+                </div>
+            </div>
+            <div class="color bg-sky-50 rounded-full p-2">
+                <img src="./assets/theme-btn.png" alt="" class="w-5">
+            </div>
+        </div>
+    </section>
+    <!-- navbar section end  -->
+
+    <!-- main section start  -->
+
+    <section class="main w-11/12 mx-auto grid grid-cols-4 gap-4">
+        <!-- big section start  -->
+        <div class="min-h-screen bg-white w-auto col-span-3 rounded-lg">
+            <div class="mb-5">
+                <!-- top section start -->
+                <div class="flex items-center justify-between px-4 py-5">
+                    <!-- check box left side  -->
+                    <div class="flex items-center justify-center space-x-5 bg-sky-50 rounded-xl pl-8 pr-6 py-4">
+                        <div class="bg-white rounded-full p-4">
+                            <img src="./assets/checkbox.png" alt="" class="w-7">
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-700">Task Assigned </p>
+                            <p class="font-bold text-3xl">05</p>
+                        </div>
+                    </div>
+
+                    <!-- middle discover bar start -->
+                    <div class="flex items-center discover pl-8 pr-14 py-4 rounded-xl space-x-5">
+                        <div class=" border-dashed border border-gray-300 rounded-2xl">
+                            <img src="./assets/board.png" alt="" class="w-14">
+                        </div>
+                        <div>
+                            <h3 class="text-xl text-white">Discover Something</h3>
+                            <p class="text-xl text-white">New Today!</p>
+                        </div>
+
+                    </div>
+
+                    <!-- day right bar start  -->
+                    <div class="flex items-center justify-center space-x-4 bg-sky-50 rounded-xl pl-5 pr-8 py-4">
+
+                        <div class="bg-white rounded-full p-4">
+                            <img src="./assets/calender.png" alt="" class="w-7">
+                        </div>
+                        <div>
+                            <p class="text-xl">Wed,</p>
+                            <p class="text-xl font-bold">Jul 28, 2025</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dashed border-sky-50"></div>
+        </div>
+        <!-- big section end  -->
+        
+        <!-- small section start  -->
+        <div class="min-h-screen bg-white w-auto rounded-lg">
+            <div class="activity-log flex flex-col items-center justify-center my-5 space-y-4">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/activity.png" alt="" class="w-6">
+                    <h4 class="text-xl font-bold">Activity Log</h4>
+                </div>
+                <button class=" bg-blue-500 px-5 py-3 text-white rounded-xl border-none outline-none">Clear History</button>
+            </div>
+            <div class="border border-dashed border-sky-50"></div>
+        </div>
+        <!-- small section end  -->
+    </section>
+
+    <!-- main section end  -->
+
+</body>
+
+</html>
