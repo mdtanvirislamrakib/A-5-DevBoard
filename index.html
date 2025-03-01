@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
 
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <!-- tailwind css setup -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-sky-50">
+<body class="bg-sky-50" id="body-bg">
 
 
     <!-- navbar section start  -->
@@ -27,10 +28,10 @@
             <div>
                 <div class="flex items-center bg-sky-50 rounded-2xl px-2 py-1 space-x-2">
                     <img src="./assets/checkbox.png" alt="" class="w-5">
-                    <p class="font-bold text-lg">23</p>
+                    <p class="font-bold text-lg" id="task-complete">23</p>
                 </div>
             </div>
-            <div class="color bg-sky-50 rounded-full p-2">
+            <div class="color bg-sky-50 rounded-full p-2 cursor-pointer" id="change-bg">
                 <img src="./assets/theme-btn.png" alt="" class="w-5">
             </div>
         </div>
@@ -52,12 +53,12 @@
                         </div>
                         <div>
                             <p class="text-lg text-gray-700">Task Assigned </p>
-                            <p class="font-bold text-3xl">05</p>
+                            <p class="font-bold text-3xl" id="task-assinged">06</p>
                         </div>
                     </div>
 
                     <!-- middle discover bar start -->
-                    <div class="flex items-center discover pl-8 pr-14 py-4 rounded-xl space-x-5">
+                    <div class="flex items-center discover pl-8 pr-14 py-4 rounded-xl space-x-5 cursor-pointer" id="blog">
                         <div class=" border-dashed border border-gray-300 rounded-2xl">
                             <img src="./assets/board.png" alt="" class="w-14">
                         </div>
@@ -75,8 +76,8 @@
                             <img src="./assets/calender.png" alt="" class="w-7">
                         </div>
                         <div>
-                            <p class="text-xl">Wed,</p>
-                            <p class="text-xl font-bold">Jul 28, 2025</p>
+                            <p class="text-xl" id="dayDisplay"></p>
+                            <p class="text-lg font-bold" id="today-date"></p>
                         </div>
 
                     </div>
@@ -94,7 +95,7 @@
 
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">ShopEase</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Fix Mobile Button Issue </h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Fix Mobile Button Issue </h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Debug using Chrome DevTools, check for
                         overlapping...</p>
                     <div class="border border-dashed border-gray-200"></div>
@@ -104,14 +105,14 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none">Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button">Completed</button>
                     </div>
                 </div>
 
                 <!-- card 2 start  -->
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">CloudSync</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Add Dark Mode</h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Add Dark Mode</h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Store the user's preference and update CSS...</p>
                     <div class="border border-dashed border-gray-200"></div>
                     <div class="flex items-center justify-between">
@@ -120,14 +121,14 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button" >Completed</button>
                     </div>
                 </div>
 
                 <!-- card 3 start  -->
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">SwiftPay</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Optimize  Home page</h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Optimize  Home page</h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="border border-dashed border-gray-200"></div>
                     <div class="flex items-center justify-between">
@@ -136,14 +137,14 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none" >Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button" >Completed</button>
                     </div>
                 </div>
 
                 <!-- card 4 start  -->
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">Meta</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Add new emoji 🤲</h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Add new emoji 🤲</h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="border border-dashed border-gray-200"></div>
                     <div class="flex items-center justify-between">
@@ -152,14 +153,14 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none">Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button">Completed</button>
                     </div>
                 </div>
 
                 <!-- card 5 start  -->
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">Google LLC</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Integrate OpenAI API </h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Integrate OpenAI API </h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Debug using Chrome DevTools, check for
                         overlapping...</p>
                     <div class="border border-dashed border-gray-200"></div>
@@ -169,14 +170,14 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none">Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button">Completed</button>
                     </div>
                 </div>
 
                 <!-- card 6 start  -->
                 <div class="bg-sky-50 rounded-xl p-5 space-y-4">
                     <span class="bg-white px-4 py-2 rounded-lg">Glassdoar</span>
-                    <h3 class="text-xl text-gray-900 font-bold">Improve Job searching</h3>
+                    <h3 class="text-xl text-gray-900 font-bold card-title">Improve Job searching</h3>
                     <p class="p-4 text-lg bg-white rounded-lg text-gray-600">Debug using Chrome DevTools, check for
                         overlapping...</p>
                     <div class="border border-dashed border-gray-200"></div>
@@ -186,7 +187,7 @@
                             <p class="text-sm text-gray-900 font-bold">March 21 2025</p>
                         </div>
                         <button
-                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none" >Completed</button>
+                            class=" bg-blue-500 px-4 py-2 text-white rounded-xl border-none outline-none complete-button" >Completed</button>
                     </div>
                 </div>
             </div>
@@ -205,15 +206,22 @@
                     <img src="./assets/activity.png" alt="" class="w-6">
                     <h4 class="text-xl font-bold">Activity Log</h4>
                 </div>
-                <button class=" bg-blue-500 px-5 py-3 text-white rounded-xl border-none outline-none">Clear
+                <button class=" bg-blue-500 px-5 py-3 text-white rounded-xl border-none outline-none" id="clear-button">Clear
                     History</button>
             </div>
             <div class="border border-dashed border-sky-50"></div>
+
+            <div class=" pt-6 px-5" id="history">
+                
+            </div>
         </div>
         <!-- small section end  -->
     </section>
 
     <!-- main section end  -->
+
+
+    <script src="script.js"></script>
 
 </body>
 
