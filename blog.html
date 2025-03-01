@@ -24,18 +24,156 @@
             <img src="./assets/logo.png" alt="" class="w-11">
             <h3 class="text-2xl">Dev<span class="font-bold">Board</span></h3>
         </div>
-        <button class=" bg-blue-500 px-5 py-3 text-white rounded-xl border-none outline-none" id="desk-button">Back to Desk</button>
+        <button class=" bg-blue-500 px-5 py-3 text-white rounded-xl border-none outline-none" id="desk-button">Back to
+            Desk</button>
     </section>
     <!-- navbar section end  -->
 
     <!-- main section start  -->
+    <main>
+        <h1 class="text-4xl font-bold text-center my-5">Blogs</h1>
+        <div class="space-y-10">
 
-    
+
+
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-5">
+                <h1 class="text-2xl font-bold mb-2">Question-1: What are the different ways to select an element in the
+                    DOM?</h1>
+                <div class="border border-dashed border-gray-300"></div>
+
+                <div class="space-y-5 mt-3">
+                    <p class="text-xl text-gray-900 font-bold">There are several ways to select an element in the DOM:
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-lg text-gray-500 font-semibold">1. document.getElementById("id-name") => Selects
+                            an element by its id.</p>
+                        <p class="text-lg text-gray-500 font-semibold">2. document.getElementsByClassName("class-name")
+                            => Selects all elements with a specific class.</p>
+                        <p class="text-lg text-gray-500 font-semibold">3. document.getElementsByTagName("tag-name") =>
+                            Selects all elements with a specific tag.</p>
+                        <p class="text-lg text-gray-500 font-semibold">4. document.querySelector("css-selector") =>
+                            Selects the first element that matches the given CSS selector.</p>
+                        <p class="text-lg text-gray-500 font-semibold">5. document.querySelectorAll("css-selector") =>
+                            Selects all elements that match the given CSS selector and returns a NodeList.</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-5">
+                <h1 class="text-2xl font-bold mb-2">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?</h1>
+                <div class="border border-dashed border-gray-300"></div>
+
+                <div class="space-y-5 mt-3">
+                    <p class="text-xl text-gray-900 font-bold">The differences between innerHTML, innerText, and
+                        textContent are:
+                    </p>
+                    <div class="px-5">
+                        <ol class="list-decimal space-y-2">
+
+                            <li class="text-xl font-bold text-gray-800">innerHTML</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Returns or sets the HTML content inside an element.</li>
+                                <li>Recognizes and renders HTML tags.</li>
+                            </ul>
+                            
+                            <li class="text-xl font-bold text-gray-800">innerText</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Returns or sets the visible text inside an element.</li>
+                                <li>Ignores hidden text.</li>
+                            </ul>
+
+                            <li class="text-xl font-bold text-gray-800">textContent</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Returns or sets all text content inside an element, including hidden text.</li>
+                                <li>Does not recognize HTML tags.</li>
+                            </ul>
+
+                        </ol>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-5">
+                <h1 class="text-2xl font-bold mb-2">Question-3: What is event delegation in the DOM?</h1>
+                <div class="border border-dashed border-gray-300"></div>
+
+                <div class="space-y-5 mt-3">
+                    <p class="text-xl text-gray-900 font-bold">Event Delegation in the DOM:
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-lg text-gray-500 font-semibold">Event Delegation allows a parent element to handle events for multiple child elements using event bubbling. Instead of adding listeners to each child, we add one to the parent and use event.target to detect which child triggered the event.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-5">
+                <h1 class="text-2xl font-bold mb-2">Question-4: What is event bubbling in the DOM?</h1>
+                <div class="border border-dashed border-gray-300"></div>
+
+                <div class="space-y-5 mt-3">
+                    <p class="text-xl text-gray-900 font-bold">Event Bubbling in the DOM:
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-lg text-gray-500 font-semibold">Event Bubbling is a phase in the event propagation process where an event starts from the target element and moves upward to its parent, grandparent, and so on, until it reaches the document object.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-5">
+                <h1 class="text-2xl font-bold mb-2">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <div class="border border-dashed border-gray-300"></div>
+
+                <div class="space-y-5 mt-3">
+                    <p class="text-xl text-gray-900 font-bold">Creating, Adding, and Removing Elements in JavaScript:
+                    </p>
+                    <div class="px-5">
+                        <ol class="list-decimal space-y-2">
+
+                            <li class="text-xl font-bold text-gray-800">Creating an Element</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Use document.createElement() to create a new element.</li>
+                            </ul>
+                            
+                            <li class="text-xl font-bold text-gray-800">Adding an Element to the DOM</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Use appendChild(), append(), prepend(), or insertBefore()</li>
+                            </ul>
+
+                            <li class="text-xl font-bold text-gray-800">Removing an Element</li>
+                            <ul class="list-disc ml-5 text-gray-600 font-semibold text-lg">
+                                <li>Use remove() or removeChild()</li>
+                            </ul>
+
+                        </ol>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
 
     <!-- main section end  -->
 
 
-    <script src="script.js"></script>
+    <script src="./blog.js"></script>
 
 </body>
 

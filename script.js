@@ -5,6 +5,7 @@ const cardTitles = document.querySelectorAll(".card-title");
 const container = document.getElementById("history");
 const taskComplete = document.getElementById("task-complete");
 const taskAssinged = document.getElementById("task-assinged");
+let allDisabled = true;
 
 for (let i = 0; i < completeButtoons.length; i++) {
     completeButtoons[i].addEventListener('click', function () {
@@ -13,6 +14,7 @@ for (let i = 0; i < completeButtoons.length; i++) {
         completeButtoons[i].setAttribute("disabled", true);
 
 
+        
         if (completeButtoons[0].hasAttribute("disabled") && completeButtoons[1].hasAttribute("disabled") && completeButtoons[2].hasAttribute("disabled") && completeButtoons[3].hasAttribute("disabled") && completeButtoons[4].hasAttribute("disabled") && completeButtoons[5].hasAttribute("disabled")) {
             alert("Congratulates!! You have completed the current task");
         }
@@ -28,7 +30,7 @@ for (let i = 0; i < completeButtoons.length; i++) {
 
         // added activity section
         const time = new Date();
-        const formattedDateTime = time.toLocaleString();
+        const formattedDateTime = time.toLocaleTimeString();
 
 
 
@@ -89,5 +91,12 @@ changeBg.addEventListener("click", function () {
 const clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", function() {
     container.style.display = "none"
+})
+
+// blog click page
+const blog = document.getElementById("blog");
+blog.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "./blog.html"
 })
 
