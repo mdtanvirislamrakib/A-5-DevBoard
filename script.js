@@ -5,7 +5,7 @@ const cardTitles = document.querySelectorAll(".card-title");
 const container = document.getElementById("history");
 const taskComplete = document.getElementById("task-complete");
 const taskAssinged = document.getElementById("task-assinged");
-let allDisabled = true;
+
 
 for (let i = 0; i < completeButtoons.length; i++) {
     completeButtoons[i].addEventListener('click', function () {
@@ -32,9 +32,9 @@ for (let i = 0; i < completeButtoons.length; i++) {
         const time = new Date();
         const formattedDateTime = time.toLocaleTimeString();
 
-
-
         const div = document.createElement("div");
+
+        // const div = document.createElement("div");
         div.classList.add("bg-sky-50", "p-2", "mb-3", "rounded-lg", "text-sm");
 
         div.innerHTML = `
@@ -42,9 +42,6 @@ for (let i = 0; i < completeButtoons.length; i++) {
         `;
 
         container.appendChild(div);
-
-        container.style.display = "block";
-
     });
 };
 
@@ -90,7 +87,8 @@ changeBg.addEventListener("click", function () {
 
 const clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", function() {
-    container.style.display = "none"
+    container.innerHTML = "";
+    
 })
 
 // blog click page
@@ -98,5 +96,4 @@ const blog = document.getElementById("blog");
 blog.addEventListener("click", function(event) {
     event.preventDefault();
     window.location.href = "./blog.html"
-})
-
+});
