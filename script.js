@@ -58,29 +58,21 @@ todayDate.innerText = new Date().toDateString().slice(4);
 
 
 // background color chnage 
-
 const changeBg = document.getElementById("change-bg");
+const colors = ["bg-sky-50", "bg-pink-50", "bg-gray-100", "bg-yellow-50", "bg-lime-100", "bg-emerald-100"];
+let index = 0;
 changeBg.addEventListener("click", function () {
     const bodyBg = document.getElementById("body-bg");
-    if (bodyBg.classList.contains("bg-sky-50")) {
-        bodyBg.classList.remove("bg-sky-50");
-        bodyBg.classList.add("bg-pink-50");
-    } else if (bodyBg.classList.contains("bg-pink-50")) {
-        bodyBg.classList.add("bg-gray-100");
-        bodyBg.classList.remove("bg-sky-50");
-        bodyBg.classList.remove("bg-pink-50");
-    } else if (bodyBg.classList.contains("bg-gray-50")) {
-        bodyBg.classList.add("bg-yellow-50");
-        bodyBg.classList.remove("bg-gray-100");
-        bodyBg.classList.remove("bg-sky-50");
-        bodyBg.classList.remove("bg-pink-50");
-    } else {
-        bodyBg.classList.remove("bg-yellow-50");
-        bodyBg.classList.remove("bg-gray-100");
-        bodyBg.classList.add("bg-sky-50");
-        bodyBg.classList.remove("bg-pink-50");
+    for (let i = 0; i < colors.length; i++) {
+        bodyBg.classList.remove(colors[i]);
     }
-})
+    bodyBg.classList.add(colors[index]);
+    if (index < colors.length - 1) {
+        index++;
+    } else {
+        index = 0;
+    }
+});
 
 
 // clear activity log section
